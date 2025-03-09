@@ -87,6 +87,8 @@ model ProgramEnrollment {
   @@unique([partnerId, programId])
   @@unique([tenantId, programId])
   @@index([programId])
+  @@index([partnerId])
+  @@index([programId, partnerId])
   @@index([discountId])
 }
 

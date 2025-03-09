@@ -48,6 +48,7 @@ model PartnerUser {
 }
 
 model PartnerInvite {
+  id        String      @id @default(cuid())
   email     String
   expires   DateTime
   partnerId String
